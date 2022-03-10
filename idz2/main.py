@@ -4,7 +4,6 @@
 
 if __name__ == "__main__":
     with open("text.txt", "r") as file:
-        string = ''
         string = " ".join(file.readlines())
     words = string.split()
     words.sort(key=len, reverse=True)
